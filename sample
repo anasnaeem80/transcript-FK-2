@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Transcript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="transcript">
+      <!-- Logo Section -->
+      <div class="logo-section">
+        <img src="logo.png" alt="University Logo" class="logo" />
+      </div>
+
+      <div class="header">
+        <div class="header-inner">
+          <div class="university-block">
+            <div class="university-name">UNIVERSITY OF KARACHI</div>
+            <div class="urdu-text">جامعہ کراچی</div>
+          </div>
+          <div class="title-block">
+            <div class="transcript-title">
+              ACADEMIC TRANSCRIPT (Undergraduate)
+            </div>
+            <div class="unofficial-badge">UNOFFICIAL TRANSCRIPT</div>
+          </div>
+        </div>
+      </div>
+      <!-- Student Info -->
+      <div class="student-info">
+        <div>
+          <div class="info-row">
+            <span class="info-label">Name:</span> FAIZA KASHAF
+          </div>
+          <div class="info-row">
+            <span class="info-label">Father Name:</span> TAHIR AHMED
+          </div>
+          <div class="info-row">
+            <span class="info-label">Student CNIC:</span> 42101-6939953-2
+          </div>
+          <div class="info-row">
+            <span class="info-label">Mode of Study:</span> Regular-Full Time
+          </div>
+          <div class="info-row">
+            <span class="info-label">Degree:</span> Bachelor of Software
+            Engineering
+          </div>
+          <div class="info-row">
+            <span class="info-label">Campus:</span> University of Karachi
+          </div>
+        </div>
+        <div>
+          <div class="info-row">
+            <span class="info-label">Date of Birth:</span> 22 January 2004
+          </div>
+          <div class="info-row">
+            <span class="info-label">Gender:</span> Female
+          </div>
+          <div class="info-row">
+            <span class="info-label">Enrollment No:</span> SCI/DCS/KU-13274/2021
+          </div>
+          <div class="info-row">
+            <span class="info-label">Date of Award:</span> - - -
+          </div>
+          <div class="info-row">
+            <span class="info-label">Admission Date:</span> 20 December 2021
+          </div>
+        </div>
+      </div>
+
+      <!-- First Semester -->
+      <div class="semester">
+        <div class="semester-header">First Semester</div>
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>COURSE NO.</th>
+              <th>TITLE</th>
+              <th>CR. Hrs.</th>
+              <th>GRADE</th>
+              <th>G.P</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CSSE-301</td>
+              <td>Calculus and Analytical Geometry</td>
+              <td>3</td>
+              <td>B+</td>
+              <td>10.2</td>
+            </tr>
+            <tr>
+              <td>CSSE-303</td>
+              <td>Computer Logic Design and Computer Organization</td>
+              <td>3</td>
+              <td>B+</td>
+              <td>10.2</td>
+            </tr>
+            <tr>
+              <td>CSSE-305</td>
+              <td>
+                Introduction to Computer Science with Contemporary Languages
+              </td>
+              <td>3</td>
+              <td>C+</td>
+              <td>7.2</td>
+            </tr>
+            <tr>
+              <td>CSSE-307</td>
+              <td>Islamic Studies or Ethics</td>
+              <td>3</td>
+              <td>A</td>
+              <td>12.0</td>
+            </tr>
+            <tr>
+              <td>CSSE-311</td>
+              <td>English</td>
+              <td>3</td>
+              <td>B+</td>
+              <td>10.2</td>
+            </tr>
+            <tr>
+              <td>CSSE-313</td>
+              <td>Introduction to Software Engineering</td>
+              <td>3</td>
+              <td>A</td>
+              <td>12.0</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="credit-summary">
+          <span>CR. Hrs.: 18</span>
+          <span>GPA: 3.43 | CGPA: 61.8</span>
+        </div>
+      </div>
+
+      <!-- Second Semester -->
+      <div class="semester">
+        <div class="semester-header">Second Semester</div>
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>COURSE NO.</th>
+              <th>TITLE</th>
+              <th>CR. Hrs.</th>
+              <th>GRADE</th>
+              <th>G.P</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CSSE-302</td>
+              <td>Business Communication Skills</td>
+              <td>3</td>
+              <td>A-</td>
+              <td>11.4</td>
+            </tr>
+            <tr>
+              <td>CSSE-304</td>
+              <td>Pakistan Studies</td>
+              <td>3</td>
+              <td>A</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>CSSE-306</td>
+              <td>Calculus and Analytical Geometry-II</td>
+              <td>3</td>
+              <td>A-</td>
+              <td>11.4</td>
+            </tr>
+            <tr>
+              <td>CSSE-308</td>
+              <td>Linear Algebra</td>
+              <td>2</td>
+              <td>A</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>CSSE-310</td>
+              <td>Object Oriented Concepts</td>
+              <td>3</td>
+              <td>A</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>CSSE-314</td>
+              <td>Urdu / Humanities</td>
+              <td>3</td>
+              <td>B+</td>
+              <td>10.2</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="credit-summary">
+          <span>CR. Hrs.: 18</span>
+          <span>GPA: 3.83 | CGPA: 69</span>
+        </div>
+      </div>
+
+      <!-- Third Semester -->
+      <div class="semester">
+        <div class="semester-header">Third Semester</div>
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>COURSE NO.</th>
+              <th>TITLE</th>
+              <th>CR. Hrs.</th>
+              <th>GRADE</th>
+              <th>G.P</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CSSE-403</td>
+              <td>Relational Data Base Management System</td>
+              <td>3</td>
+              <td>A-</td>
+              <td>11.4</td>
+            </tr>
+            <tr>
+              <td>CSSE-405</td>
+              <td>Data Structure and Application</td>
+              <td>3</td>
+              <td>B</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>CSSE-411</td>
+              <td>Ordinary Differential Equation</td>
+              <td>3</td>
+              <td>A+</td>
+              <td>12.0</td>
+            </tr>
+            <tr>
+              <td>CSSE-413</td>
+              <td>Automata Theory</td>
+              <td>3</td>
+              <td>B</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>CSSE-415</td>
+              <td>Software Development</td>
+              <td>3</td>
+              <td>C</td>
+              <td>6.0</td>
+            </tr>
+            <tr>
+              <td>CSSE-417</td>
+              <td>Probability & Statistics</td>
+              <td>3</td>
+              <td>A-</td>
+              <td>11.4</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="credit-summary">
+          <span>CR. Hrs.: 18</span>
+          <span>GPA: 3.26 | CGPA: 58.8</span>
+        </div>
+      </div>
+
+      <!-- Fourth Semester -->
+      <div class="semester">
+        <div class="semester-header">Fourth Semester</div>
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>COURSE NO.</th>
+              <th>TITLE</th>
+              <th>CR. Hrs.</th>
+              <th>GRADE</th>
+              <th>G.P</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CSSE-402</td>
+              <td>Assembly Language</td>
+              <td>3</td>
+              <td>B+</td>
+              <td>10.2</td>
+            </tr>
+            <tr>
+              <td>CSSE-404</td>
+              <td>Introduction to Operating Systems</td>
+              <td>3</td>
+              <td>B</td>
+              <td>9.0</td>
+            </tr>
+            <tr>
+              <td>CSSE-406</td>
+              <td>Business Economics</td>
+              <td>3</td>
+              <td>A-</td>
+              <td>11.4</td>
+            </tr>
+            <tr>
+              <td>CSSE-412</td>
+              <td>Discrete Mathematics</td>
+              <td>3</td>
+              <td>B</td>
+              <td>9.0</td>
+            </tr>
+            <tr>
+              <td>CSSE-414</td>
+              <td>Advanced Software Engineering</td>
+              <td>3</td>
+              <td>A-</td>
+              <td>11.4</td>
+            </tr>
+            <tr>
+              <td>CSSE-416</td>
+              <td>Psychology</td>
+              <td>3</td>
+              <td>A-</td>
+              <td>11.4</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="credit-summary">
+          <span>CR. Hrs.: 18</span>
+          <span>GPA: 3.46 | CGPA: 62.4</span>
+        </div>
+      </div>
+
+      <!-- Fifth Semester -->
+      <div class="semester">
+        <div class="semester-header">Fifth Semester</div>
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>COURSE NO.</th>
+              <th>TITLE</th>
+              <th>CR. Hrs.</th>
+              <th>GRADE</th>
+              <th>G.P</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CSSE-501</td>
+              <td>Compiler Construction</td>
+              <td>3</td>
+              <td>A</td>
+              <td>12.0</td>
+            </tr>
+            <tr>
+              <td>CSSE-503</td>
+              <td>Computer Architecture</td>
+              <td>3</td>
+              <td>A</td>
+              <td>12.0</td>
+            </tr>
+            <tr>
+              <td>CSSE-505</td>
+              <td>Organizational Behaviour</td>
+              <td>3</td>
+              <td>A</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>CSSE-507</td>
+              <td>Practical Networking and Data Communications</td>
+              <td>3</td>
+              <td>B+</td>
+              <td>10.2</td>
+            </tr>
+            <tr>
+              <td>CSSE-509</td>
+              <td>Artificial Intelligence in Software Engineering</td>
+              <td>3</td>
+              <td>B+</td>
+              <td>10.2</td>
+            </tr>
+            <tr>
+              <td>CSSE-511</td>
+              <td>Numerical Analysis</td>
+              <td>3</td>
+              <td>A</td>
+              <td>8.4</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="credit-summary">
+          <span>CR. Hrs.: 18</span>
+          <span>GPA: 3.52 | CGPA: 3.40</span>
+        </div>
+      </div>
+
+      <!-- Sixth Semester -->
+      <div class="semester">
+        <div class="semester-header">Sixth Semester</div>
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>COURSE NO.</th>
+              <th>TITLE</th>
+              <th>CR. Hrs.</th>
+              <th>GRADE</th>
+              <th>G.P</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CSSE-502</td>
+              <td>Internet Programming Techniques</td>
+              <td>3</td>
+              <td>B+</td>
+              <td>10.2</td>
+            </tr>
+            <tr>
+              <td>CSSE-504</td>
+              <td>Topic of Current Interest-I</td>
+              <td>3</td>
+              <td>A-</td>
+              <td>11.4</td>
+            </tr>
+            <tr>
+              <td>CSSE-506</td>
+              <td>Software Project Management</td>
+              <td>3</td>
+              <td>A-</td>
+              <td>11.4</td>
+            </tr>
+            <tr>
+              <td>CSSE-508</td>
+              <td>Marketing Management</td>
+              <td>3</td>
+              <td>A</td>
+              <td>12.0</td>
+            </tr>
+            <tr>
+              <td>CSSE-512</td>
+              <td>Network Security</td>
+              <td>3</td>
+              <td>A-</td>
+              <td>11.4</td>
+            </tr>
+            <tr>
+              <td>CSSE-514</td>
+              <td>Data Warehousing & Data Mining</td>
+              <td>3</td>
+              <td>A</td>
+              <td>12.0</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="credit-summary">
+          <span>CR. Hrs.: 18</span>
+          <span>GPA: 3.8 | CGPA: 68.4</span>
+        </div>
+      </div>
+
+      <!-- Career Totals -->
+      <div class="career-totals">
+        <div>Career Totals:</div>
+        <div class="totals">
+          Cum CR. Hrs.: 90<br />
+          GPA: 3.56<br />
+          Percentage: 89%
+        </div>
+        <div class="status">Status: Degree In Progress</div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div>..................END of TRANSCRIPT..................</div>
+      </div>
+    </div>
+  </body>
+</html>
