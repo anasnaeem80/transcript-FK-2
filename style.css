@@ -1,3 +1,10 @@
+/* ===========================
+   BASE
+=========================== */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Arial", sans-serif;
   margin: 20px;
@@ -6,6 +13,9 @@ body {
   min-height: 100vh;
 }
 
+/* ===========================
+   TRANSCRIPT WRAPPER
+=========================== */
 .transcript {
   background: white;
   padding: 40px;
@@ -27,14 +37,45 @@ body {
   border-radius: 15px 15px 0 0;
 }
 
-/* Header */
+/* ===========================
+   LOGO
+=========================== */
+.logo-section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+}
+
+/* ===========================
+   HEADER
+=========================== */
 .header {
   text-align: center;
   border-bottom: 3px solid #800000;
   padding-bottom: 25px;
   margin-bottom: 35px;
-  position: relative;
 }
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.university-block {
+  text-align: left;
+}
+
+.title-block {
+  text-align: right;
+}
+
 .university-name {
   font-size: 28px;
   font-weight: bold;
@@ -43,9 +84,10 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.urdu {
-  font-size: 16px;
-  color: #666;
+.university-address {
+  font-size: 12px;
+  color: #333;
+  margin-top: 4px;
 }
 
 .transcript-title {
@@ -56,7 +98,7 @@ body {
   letter-spacing: 1px;
 }
 
-.unofficial {
+.unofficial-badge {
   font-size: 14px;
   color: #800000;
   font-weight: bold;
@@ -69,12 +111,15 @@ body {
   letter-spacing: 1px;
 }
 
-/* Student Info */
+/* ===========================
+   STUDENT INFO
+=========================== */
 .student-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-bottom: 30px;
+  font-size: 13px;
 }
 
 .info-row {
@@ -84,88 +129,141 @@ body {
 
 .info-label {
   font-weight: bold;
-  width: 140px;
+  min-width: 130px;
 }
 
-/* Semester */
+/* ===========================
+   SEMESTER BLOCK
+=========================== */
 .semester {
   margin-bottom: 30px;
   border: 1px solid #ddd;
-  padding: 20px;
   border-radius: 10px;
-  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  overflow: hidden;
+  background: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .semester-header {
   font-weight: bold;
-  font-size: 16px;
-  background: linear-gradient(135deg, #800000, #a00000);
+  font-size: 14px;
+  background: #d46a6a;
   color: white;
-  padding: 12px;
-  margin: -20px -20px 15px -20px;
-  border-radius: 10px 10px 0 0;
+  padding: 10px 14px;
   text-align: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
 }
 
+/* ===========================
+   COURSE TABLE  —  KEY FIX
+=========================== */
 .course-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  table-layout: fixed; /* forces all tables to identical column widths */
+}
+
+/* Column widths — adjust percentages here if needed */
+.course-table col.col-no {
+  width: 13%;
+}
+.course-table col.col-title {
+  width: 52%;
+}
+.course-table col.col-cr {
+  width: 10%;
+}
+.course-table col.col-grade {
+  width: 12%;
+}
+.course-table col.col-gp {
+  width: 13%;
 }
 
 .course-table th {
   background: #f0f0f0;
-  padding: 8px;
-  text-align: left;
-  font-size: 12px;
+  padding: 9px 10px;
+  font-size: 13px;
+  font-weight: bold;
   border: 1px solid #ddd;
+  text-align: left;
 }
 
 .course-table td {
-  padding: 6px 8px;
-  font-size: 12px;
+  padding: 7px 10px;
+  font-size: 13px;
   border: 1px solid #ddd;
+  /* Allow title column to wrap, truncate others */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+/* Title column may wrap */
+.course-table td:nth-child(2) {
+  white-space: normal;
+}
+
+/* Center-align numeric columns */
+.course-table th:nth-child(3),
+.course-table th:nth-child(4),
+.course-table th:nth-child(5) {
+  text-align: center;
+}
+
+.course-table td:nth-child(3),
+.course-table td:nth-child(4),
+.course-table td:nth-child(5) {
+  text-align: center;
+}
+
+/* Zebra striping */
+.course-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.course-table tbody tr:hover {
+  background: #fff5f5;
+}
+
+/* ===========================
+   CREDIT SUMMARY
+=========================== */
 .credit-summary {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.course-table th {
-  background: #f0f0f0;
-  padding: 8px;
-  text-align: left;
-  font-size: 16px; /* pehle 12px tha */
-  border: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 8px 14px;
+  background: #f5f5f5;
+  border-top: 1px solid #ddd;
 }
 
-.course-table td {
-  padding: 6px 8px;
-  font-size: 16px; /* pehle 12px tha */
-  border: 1px solid #ddd;
-}
-
-/* Totals */
-.totals {
+/* ===========================
+   CAREER TOTALS
+=========================== */
+.career-totals {
   text-align: center;
-  margin: 30px 0;
+  margin: 30px 0 20px;
   font-weight: bold;
   font-size: 14px;
+}
+
+.totals {
+  line-height: 2;
+  margin: 10px 0;
 }
 
 .status {
   font-weight: bold;
   color: #800000;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
-/* Footer */
+/* ===========================
+   FOOTER
+=========================== */
 .footer {
   text-align: center;
   margin-top: 30px;
@@ -173,32 +271,29 @@ body {
   border-top: 2px solid #800000;
   font-size: 12px;
   font-weight: bold;
+  line-height: 1.8;
 }
 
-/* Logo */
-.logo-section {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.logo {
-  max-width: 100px; /* adjust size */
-  height: auto;
-}
-
-/* Print Optimization */
+/* ===========================
+   PRINT
+=========================== */
 @media print {
   body {
     margin: 0;
     background: white !important;
     -webkit-print-color-adjust: exact;
-    zoom: 65%; /* adjust until 1-page fit */
+    print-color-adjust: exact;
+    zoom: 65%;
   }
 
   .transcript {
     box-shadow: none;
     border-radius: 0;
-    page-break-inside: avoid;
+    padding: 20px;
+  }
+
+  .transcript::before {
+    border-radius: 0;
   }
 
   .semester,
@@ -207,77 +302,11 @@ body {
     page-break-inside: avoid;
   }
 
-  .footer {
-    text-align: center;
-    font-size: 12px;
-    margin-top: 10px;
-  }
-}
-.semester-header {
-  background: #d46a6a; /* Light Mehroon */
-  font-weight: bold;
-  text-align: center;
-  padding: 8px; /* Thodi comfortable height */
-  font-size: 14px; /* Clear text */
-  color: white;
-  border-radius: 6px 6px 0 0;
-}
-.transcript-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 equal columns */
-  gap: 20px; /* space between columns */
-  margin-top: 20px;
-}
-
-.semester {
-  border: 1px solid #ddd;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  background: #fff;
-}
-/* Print Optimization */
-@media print {
-  body {
-    margin: 0;
-    background: white !important;
-    -webkit-print-color-adjust: exact;
-    zoom: 65%; /* adjust until 1-page fit */
-  }
-
-  .transcript {
-    box-shadow: none;
-    border-radius: 0;
-    page-break-inside: avoid;
-  }
-
-  .semester,
-  .student-info,
-  .career-totals {
-    page-break-inside: avoid;
-  }
-
-  /* Extra space on top of new page semesters */
   .semester {
-    margin-top: 25px !important; /* thoda gap add ho jayega */
+    margin-top: 20px;
   }
 
   .footer {
-    text-align: center;
-    font-size: 12px;
     margin-top: 10px;
   }
-}
-
-/* Career Totals spacing */
-.totals {
-  text-align: center;
-  margin: 30px 0;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.8; /* line spacing add */
-}
-.university-address {
-  font-size: 12px;
-  color: #333;
-  margin-top: 4px;
 }
