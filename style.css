@@ -61,19 +61,15 @@ body {
 }
 
 .header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  text-align: center;
 }
 
 .university-block {
-  text-align: left;
+  text-align: center;
 }
 
 .title-block {
-  text-align: right;
+  text-align: center;
 }
 
 .university-name {
@@ -100,15 +96,11 @@ body {
 
 .unofficial-badge {
   font-size: 14px;
-  color: #800000;
+  color: #333;
   font-weight: bold;
-  margin-top: 12px;
-  padding: 6px 15px;
-  border: 2px solid #800000;
-  border-radius: 25px;
-  display: inline-block;
-  background: rgba(128, 0, 0, 0.1);
+  margin-top: 8px;
   letter-spacing: 1px;
+  display: inline-block;
 }
 
 /* ===========================
@@ -244,21 +236,23 @@ body {
    CAREER TOTALS
 =========================== */
 .career-totals {
-  text-align: center;
-  margin: 30px 0 20px;
-  font-weight: bold;
+  margin: 20px 0;
   font-size: 14px;
+  border: 2px solid #800000;
+  padding: 15px 20px;
+  border-radius: 8px;
 }
 
 .totals {
-  line-height: 2;
-  margin: 10px 0;
+  font-weight: normal;
+  margin: 6px 0;
+  line-height: 1.8;
 }
 
 .status {
   font-weight: bold;
   color: #800000;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 /* ===========================
